@@ -9,8 +9,5 @@ import lombok.Setter;
 @Getter
 @Entity
 public class User {
-    @Id
-    private Long id;
-    private String name;
-    private String password;
+
 }
