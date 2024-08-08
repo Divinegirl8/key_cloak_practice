@@ -7,17 +7,16 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
 
 import java.util.Collection;
 import java.util.stream.Collectors;
 
 @Configuration
 @EnableWebSecurity
-@EnableOAuth2Client
 public class SecurityConfig {
     private final LogoutHandler keycloakLogoutHandler;
 
